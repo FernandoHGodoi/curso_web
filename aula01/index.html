@@ -1,0 +1,160 @@
+<!-- HTML MODERNO -->
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <!-- TRADUCAO DA PAGINA -->
+        <meta charset="utf-8">
+
+        <!-- TITULO DA PAGINA -->
+        <title>MODULO 1</title>
+
+        <!-- ESCOPO DO CSS -->
+        <style>
+
+            /*SELECAO POR NOME DE TAG*/
+            h1{
+                color: rgb(103, 252, 190);
+            }
+            h2{
+                color: rgb(255, 194, 80);
+            }
+            h3{
+                color: cyan;
+            }
+            p{
+                color: white;
+            }
+            ul{
+                color: white;
+            }
+            ol{
+                color: white;
+            }
+
+            body{
+                background-color: black;
+            }
+
+            /*SELECAO POR IDs*/
+            #lista-ul{
+                background-color: blue;
+            }
+            #lista-ol{
+                background-color: grey;
+            }
+
+            /*SELECAO POR CLASSES*/
+            .subtitulos{
+                background-color: rgb(5, 167, 5);
+            }
+
+            .descricoes-lista{
+                background-color: indigo;
+            }
+
+        </style>
+
+    </head> 
+    
+    <body>
+
+        <!-- TITULO PRINCIPAL -->
+        <h1>AULA 2 - PROJETOS WEB</h1>
+
+        <!-- SUBTITULO -->
+        <h2>HTML + CSS</h2>
+
+        <!-- TITULO DA LISTA DESORDENADA -->
+        <h3>Conteúdo abordado na aula 2</h3>
+
+        <!-- LISTAS DESORDENADAS "UL" -->
+        <ul id="lista-ul">
+            
+            <li>Breve revisão</li>
+            <li><em>Head</em></li>
+            <li>Títulos</li>
+            <li>Ícones</li>
+            <li><em>Padding, Margin CSS</em></li>
+            <li><em>Float, Display CSS</em></li>
+
+        </ul>
+
+        <!-- TITULO DA LISTA ORDENADA -->
+        <h3>Sequência ordenada da estrutura de uma página web</h3>
+
+        <ol id="lista-ol">
+            <li><em>JavaScript</em></li><br>
+            <img src="fotos/JavaScript-logo.png" alt="Logo do JavaScript" width="150">
+            <li><em>HTML</em></li><br>
+            <img src="fotos/html5-logo.png" alt="Logo do HTML5" width="75">
+            <li><em>CSS</em></li><br>
+            <img src="fotos/CSS - logo.png" width="80">
+
+        </ol>
+
+        <!-- DESCRICAO -->
+        <p>Primeiro código em <strong>Html</strong> e <strong>Css</strong> <br>
+            Usando <em>tags</em> como: <br> 
+            "head" <br> 
+            "body" <br> 
+            "em" <br> 
+            "Strong" <br> 
+            ...na <em>estruturação</em> do código!
+        </p>
+
+        <!-- SEGUNDO SUBTITULO -->
+        <h2 class="subtitulos">Mais sobre HTML e CSS</h2>
+
+        <!-- SEGUNDA DESCRICAO -->
+        <ul class="descricoes-lista">
+            <li>Aprendendo HTML do Zero!</li>
+            <li>O que é CSS?</li>
+            <li>Qual a diferença entre HTML e CSS?</li>
+            <li>Programação para web. <Strong>VEJA MAIS</Strong></li>
+        </ul>
+        
+        <div style="height: 600px; width: 700px;
+        border: solid 3px #000000; background-color: aquamarine;">
+
+            DIV PRINCIPAL
+
+            <!-- PULAR LINHA -->
+            </br>
+
+            <div style="height: 180px; width: 670px; border: solid 3px #01aa2b; background-color: rgb(0, 255, 255);">
+
+                DIV SECUNDARIA 01
+
+            </div>
+            
+        <!-- PULAR LINHA -->
+        </br>
+            
+            <div style="height: 250px; width: 670px; border: solid 3px #ee0000; background-color: rgb(0, 255, 255);">
+
+                DIV SECUNDARIA 02
+
+                <!-- PULAR LINHA -->
+                </br>
+
+                <img src="fotos/foto-logo.png" style="height: 200px; width: 300px; border: solid 3px #0533ff; background-color: aquamarine;">
+
+            </div>
+        
+        <!-- PULAR LINHA -->
+        </br>
+
+            <div style="height: 75px; width: 675px; background-color: #fffb00;">
+
+                DIV SECUNDARIA 03
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
