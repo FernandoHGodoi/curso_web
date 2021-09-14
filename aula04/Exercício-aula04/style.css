@@ -1,0 +1,62 @@
+table{
+    width: 600px;
+    height: 200px;
+    padding-bottom: 20px;
+    border-top: solid 5px red;
+    border-bottom: solid 5px red;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-family: sans-serif;
+    font-weight: 800;
+    text-align: center;
+}
+th{
+    color: coral;
+    height: 70px;
+    font-weight: 800;
+}
+#th1{
+    border-left: solid 5px rgb(100, 164, 248);
+}
+#th2{
+    border-left: solid 5px rgb(100, 164, 248);
+    border-right: solid 5px rgb(100, 164, 248);
+}
+#th3{
+    border-right: solid 5px rgb(100, 164, 248);
+}
+.conteudo{
+    border-top: solid 5px rgb(3, 189, 3);
+    border-bottom: solid 5px rgb(3, 189, 3);
+    height: 60px;
+    color: red;
+}
+/*-----------------------  INICIO DOS SELETORES ID DAS DIVs  -------------------*/
+#circulo{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    border: solid 5px rgb(253, 181, 193);
+    margin: 0 auto;
+    line-height: 60px;
+}
+#retangulo{
+    width: 80px;
+    height: 30px;
+    border: solid 5px rgb(100, 164, 248);
+    margin: 0 auto;
+    line-height: 60px;
+}
+#quadrado{
+    width: 30px;
+    height: 30px;
+    border: solid 5px rgb(238, 215, 6);
+    border-radius: 10px;
+    margin: 0 auto;
+    line-height: 60px;
+}
+/*-----------------------  FIM DOS SELETORES ID DAS DIVs  -------------------*/
+.figuras{
+    border-bottom: solid 5px rgb(3, 189, 3);
+    height: 60px;
+}
