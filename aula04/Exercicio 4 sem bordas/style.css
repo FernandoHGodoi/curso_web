@@ -1,0 +1,59 @@
+#tabela01{
+    border-top: solid 5px red;
+    border-bottom: solid 5px red;
+    width: 600px;
+    margin: 0 auto;
+    border-spacing: 0;
+    padding-top: 20px;
+}
+#tabela02{
+    border-top: none;
+    border-bottom: solid 5px rgb(4, 202, 4);
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 600px;
+    border-spacing:0;
+    font-family: sans-serif;
+    font-weight: 800;
+    color: red;
+}
+.titulo{
+    border-left: solid 5px blue;
+    border-right: solid 5px blue;
+    border-spacing: 0;
+    color: orange;
+    height: 50px;
+}
+#titulo02{
+    border-spacing: 0;
+    color: orange;
+}
+.conteudo{
+    border-top: solid 5px rgb(4, 202, 4);
+    border-bottom: solid 5px rgb(4, 202, 4);
+    height: 70px;
+}
+#circulo{
+    border: solid 5px rgb(252, 134, 154);
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    margin: 0 auto;
+}
+#retangulo{
+    border: solid 5px blue;
+    width: 100px;
+    height: 40px;
+    margin: 0 auto;
+}
+#quadrado{
+    border: solid 5px rgb(255, 208, 0);
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+}
+td{
+    height: 70px;
+}
