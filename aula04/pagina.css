@@ -1,0 +1,64 @@
+.div_principal{
+    background-color: black;
+    border: solid 3px black;   
+    width: 800px;
+    height: 500px;
+    text-align: center;
+    margin: 0 auto;
+}
+.div_menu{
+    background-color: orangered;
+    width: 800px;
+    height: 70px;
+    margin: 0 auto;
+}
+.div_botao{
+    width: 198px;
+    height: 50px;
+    line-height: 50px;
+    background-color: greenyellow;
+    float: left;
+    text-align: center;
+    margin-top: 10px;
+    border: solid 1px black;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.div_botao:hover{
+    background-color: rgb(206, 245, 147);
+    color: #3d86a0;
+}
+
+.div_conteudo{
+    background-color: white;
+    width: 750px;
+    height: 340px;
+    margin-top: 10px;
+    margin: 0 auto;
+}
+
+.div_rodape{
+    background-color: white;
+    width: 750px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 10px;
+    margin: 0 auto;
+}
+
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+th{
+    border: solid 3px green;
+    font-size: 20px;
+    font-family: monospace;
+    padding: 5px;
+}
+td{
+    border: solid 3px blue;
+}
