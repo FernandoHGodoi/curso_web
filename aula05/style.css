@@ -1,0 +1,66 @@
+#div_principal{
+    width: 700px;
+    height: 747px;
+    border: solid 3px;
+    margin: 0 auto;
+    background-color: lightskyblue;
+}
+#div_cabecalho{
+    width: 683px;
+    height: 50px;
+    border: solid 3px rgb(0, 153, 255);
+    margin: 0 auto;
+    margin-top: 3px;
+    text-align: center;
+    line-height: 50px;
+    color: rgb(0, 153, 255);
+    font-family: sans-serif;
+    font-size:xx-large;
+    font-weight: 800;
+    background-color: white;
+}
+table{
+    width: 687px;
+    height: 627px;
+    border: solid 3px green;
+    margin: 0 auto;
+    margin-top: 5px;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-spacing: 10px 10px;
+    background-color: yellowgreen;
+}
+th{
+    border-top: solid 3px red;
+    border-bottom: solid 3px red;
+    height: 50px;
+    color: black;
+    font-family: sans-serif;
+    font-size:x-large;
+    font-weight: 800;
+    padding-left: 20px;
+    background-color: white;
+}
+td{
+    border-left: solid 3px purple;
+    border-right: solid 3px purple;
+    height: 50px;
+    width: 333px;
+    color: black;
+    font-family: sans-serif;
+    font-size: large;
+    font-weight: 600;
+    padding-left: 70px;
+    background-color: white;
+}
+#fundo_cinza{
+    background-color: lightgoldenrodyellow;
+}
+#inputbox{
+    width: 300px;
+    height: 40px;
+    border: solid 3px cornflowerblue;
+    font-family: sans-serif;
+    font-size: 15px;
+    padding-left: 10px;
+}
