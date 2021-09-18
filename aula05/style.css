@@ -1,9 +1,12 @@
+body{
+    background-color: rgb(199, 232, 253);
+}
 #div_principal{
     width: 700px;
     height: 747px;
     border: solid 3px;
     margin: 0 auto;
-    background-color: lightskyblue;
+    background-color: rgb(255, 255, 255);
 }
 #div_cabecalho{
     width: 683px;
@@ -28,7 +31,7 @@ table{
     padding: 10px;
     padding-bottom: 20px;
     border-spacing: 10px 10px;
-    background-color: yellowgreen;
+    background-color: rgb(135, 223, 250);
 }
 th{
     border-top: solid 3px red;
