@@ -1,0 +1,83 @@
+#div_back{
+    width: 1000px;
+    height: 600px;
+    background-image: linear-gradient(#006aac, #03a1c0);
+    border: solid 1px transparent;
+    margin: 0 auto;
+}
+#div_principal{
+    width: 960px;
+    height: 580px;
+    background-color: rgb(249, 252, 253);
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 7px;
+}
+#div_titulo{
+    width: 960px;
+    height: 60px;
+    border-bottom: solid 2px rgb(235, 235, 235);
+    text-align: center;
+    line-height: 60px;
+    font-family: Arial;
+    font-size: large;
+}
+#div_logo{
+    width: 480px;
+    height: 516px;
+    border-right: solid 2px rgb(235, 235, 235);
+    text-align: center;
+    line-height: 616px;
+    float: left;
+}
+#img_logo{
+    width: 300px;
+}
+#div_formulario{
+    width: 475px;
+    height: 516px;
+    float: left;
+}
+#table_cadastro{
+    width: 110px;
+    margin: 0 auto;
+    margin-top: 15px;
+    font-family: Arial;
+}
+#td_cadastro{
+    border-bottom: solid 2px rgb(235, 235, 235);
+    height: 20px;
+    font-family: Arial;
+    font-size: large;
+    line-height: 15px;
+}
+td{
+    padding-bottom: 10px;
+    font-family: Verdana;
+    font-size: 17px;
+    height: 20px;
+    width: 465px;
+    padding-left: 10px;
+}
+#inputbox{
+    width: 440px;
+    height: 30px;
+    font-family: Verdana;
+    font-size: 14px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: solid 2px rgb(235, 235, 235);
+}
+#div_botao{
+    background-color: #006aacd0;
+    font-family: Verdana;
+    font-size: 17px;
+    height: 60px;
+    width: 240px;
+    margin-left: 14px;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+    border-radius: 5px;
+}
