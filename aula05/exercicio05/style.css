@@ -68,7 +68,8 @@ td{
     border-radius: 5px;
     border: solid 2px rgb(235, 235, 235);
 }
-#div_botao{
+button{
+    border: none;
     background-color: #006aacd0;
     font-family: Verdana;
     font-size: 17px;
