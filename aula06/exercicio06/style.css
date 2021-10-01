@@ -1,0 +1,19 @@
+.col-md-4{
+    background-color: lightyellow;
+    border: solid 1px black;
+    height: 100px;
+}
+.col-md-6{
+    background-color: lightskyblue;
+    border: solid 1px black;
+    height: 70px;
+    color: white;
+}
+.col-md-12{
+    background-color: lightseagreen;
+    border: solid 1px greenyellow;
+    height: 40px;
+    color: white;
+}
+
+
