@@ -117,8 +117,48 @@ a:hover{
 .rodape{
 
     background-color: lightslategray;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 300px;
+    color: #f7f7f7;
+
+}
+.div-rodape{
+
+    border-right: solid 1px #f7f7f7;
+    height: 200px;
+    padding-right: 20px;
+
+}
+.p-rodape{
+
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 120%;
+
+}
+.img-logo{
+
+    width: 30px;
+
+}
+.nav-item-espaco{
+
+    padding-left: 40px;
+    color: inherit;
+
+}
+.nav-link{
+
+    color: #f7f7f7;
+
+}
+.nav-item-espaco2{
+
+    padding-left: 30px;
+    color: inherit;
 
 }
