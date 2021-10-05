@@ -110,3 +110,15 @@ a:hover{
     color: #666666;
     
 }
+.fs-6{
+    color: white;
+    text-align: center;
+}
+.rodape{
+
+    background-color: lightslategray;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+
+}
