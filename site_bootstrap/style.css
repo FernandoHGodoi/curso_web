@@ -27,6 +27,12 @@
     font-weight: bold;
 
 }
+.img-fluid{
+
+    min-height: 400px;
+    max-height: 400px;
+
+}
 .caixa_img{
 
     background-color: #f7f7f7;
@@ -114,6 +120,37 @@ a:hover{
     color: white;
     text-align: center;
 }
+.div-equipe-alfa{
+
+    margin-bottom: 30px;
+
+}
+.div-equipe{
+
+    max-width: 100px;
+    border-bottom: solid 2px lightgray;
+
+}
+.circulo {
+    width: 150px;
+    height: 150px;
+    border: dotted 5px blue;
+    border-radius: 75px;
+    background: transparent url('imagens/icon.png') no-repeat; 
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    margin: 0 auto;
+
+ }
+ .card-fotos{
+   
+    width: 200px;
+    height: 400px;
+    background-color: transparent;
+    margin: 0 auto
+
+}
 .rodape{
 
     background-color: lightslategray;
@@ -163,3 +200,4 @@ a:hover{
     line-height: 80%;
 
 }
+
