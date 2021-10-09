@@ -2,6 +2,11 @@
     
     --bs-gutter-x: 0rem;
 }
+.sessao_cinza_carrossel{
+
+    background-image: linear-gradient(#006aac, #03a1c0);
+
+}
 .sessao_cinza{
 
     background-color: #f7f7f7;
@@ -11,7 +16,7 @@
 }
 .sessao_colorida{
 
-    background-color: rgb(100, 100, 100);
+    background-image: linear-gradient(#006aac, #03a1c0);
     padding-top: 20px;
     padding-bottom: 20px;
 
@@ -41,6 +46,14 @@
     text-align: center;
     border-radius: 5px;
 
+}
+
+.d-block{
+    
+    margin: 0 auto;
+    min-height: 400px;
+    max-height: 400px;
+    
 }
 
 .card-img-top{
@@ -169,15 +182,10 @@ a:hover{
     background-position: center center;
     position: relative;
 
-    margin-left: 20px;
     margin-bottom: 20px;
 
 }
-.descricao-qualif{
 
-    margin-left: 20px;
-
-}
 .foto1{
 
     text-align: left;
@@ -198,7 +206,6 @@ a:hover{
     background-size: cover;
     background-position: center center;
     position: relative;
-    margin-right: 20px;
     margin-bottom: 20px;
     text-align: right;
 
@@ -220,7 +227,7 @@ a:hover{
 /*---------------------------------------------------------------------*/
 .rodape{
 
-    background-color: rgb(100, 100, 100);
+    background-color: black;
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 50px;
@@ -267,13 +274,44 @@ a:hover{
     line-height: 80%;
 
 }
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
     
     .div-rodape{
 
         border: none;
 
     }
+    .foto1{
+
+        text-align: center;
+
+    }
+    .descricao-qualif{
+
+        text-align: center;
+
+    }
+    .foto2{
+
+        text-align: center;
+
+    }
+    .descricao-qualif2{
+
+        text-align: center;
+    
+    }
+
+    .d-block{
+        
+        margin: 0 auto;
+        width: 100%;
+        min-height: 400px;
+        max-height: 400px;
+        
+    }
 
 }
+
+
 
