@@ -11,7 +11,7 @@
 }
 .sessao_colorida{
 
-    background-color: lightslategray;
+    background-color: rgb(100, 100, 100);
     padding-top: 20px;
     padding-bottom: 20px;
 
@@ -125,9 +125,15 @@ a:hover{
     margin-bottom: 30px;
 
 }
+.div-equipe-alfa2{
+
+    margin-bottom: 30px;
+    color: #f7f7f7;
+
+}
 .div-equipe{
 
-    max-width: 100px;
+    max-width: 150px;
     border-bottom: solid 2px lightgray;
 
 }
@@ -136,7 +142,7 @@ a:hover{
     height: 150px;
     border: dotted 5px blue;
     border-radius: 75px;
-    background: transparent url('imagens/icon.png') no-repeat; 
+    background: transparent url('imagens/0.jpeg') no-repeat; 
     background-size: cover;
     background-position: center center;
     position: relative;
@@ -151,9 +157,70 @@ a:hover{
     margin: 0 auto
 
 }
+/*---------------------------------------------------------------------*/
+
+.imagem-qualif{
+    width: 100px;
+    height: 100px;
+    border: dotted 5px blue;
+    border-radius: 75px;
+    background: transparent no-repeat; 
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+}
+.descricao-qualif{
+
+    margin-left: 20px;
+
+}
+.foto1{
+
+    text-align: left;
+
+}
+.foto2{
+
+    text-align: right;
+
+}
+.imagem-qualif2{
+
+    width: 100px;
+    height: 100px;
+    border: dotted 5px blue;
+    border-radius: 75px;
+    background: transparent no-repeat; 
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: right;
+
+}
+.descricao-qualif2{
+
+    margin-right: 20px;
+    text-align: right;
+
+}
+.back-qualif{
+
+    background-color: #f7f7f7;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+/*---------------------------------------------------------------------*/
 .rodape{
 
-    background-color: lightslategray;
+    background-color: rgb(100, 100, 100);
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 50px;
@@ -198,6 +265,15 @@ a:hover{
     padding-left: 30px;
     color: inherit;
     line-height: 80%;
+
+}
+@media only screen and (max-width: 768px) {
+    
+    .div-rodape{
+
+        border: none;
+
+    }
 
 }
 
