@@ -1,0 +1,24 @@
+.table{
+
+    text-align: center;
+
+}
+th:first-child, td:first-child{
+
+    position: sticky;
+    left: 0px;
+    background-color: lightgray !important;
+
+}
+.row-botao{
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.bg-secondary{
+
+    background-color: red;
+
+}
+
