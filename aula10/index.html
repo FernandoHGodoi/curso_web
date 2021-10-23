@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 10</title>
+
+  <!--BOOTSTRAP-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <!--CSS-->
+  <link rel="stylesheet" href="style.css">
+
+  <!--CHAMANDO UM ARQUIVO CSS DO SITE FONT AWESOME-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+  <!--JAVASCRIP-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  
+  <!--SCROLLSPY-->
+  <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading1">Galeria</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading2">Collapse</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Mais opções</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#scrollspyHeading3">Toasts</a></li>
+          <li><a class="dropdown-item" href="#scrollspyHeading4">Primeiro texto</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#scrollspyHeading5">Segundo texto</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+  <h4 id="scrollspyHeading1"><i class="fas fa-palette"></i> Galeria</h4>
+    
+  <!--CARROSSEL-->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="fotos/fotos-de-aventura.webp" class="d-block w-100 banner_padrao" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Aventura registrada</h5>
+          <p>Registrando os melhores momentos da vida.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="fotos/fotosvencedora.png" class="d-block w-100 banner_padrao" alt="FOCA">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Reino Sub-aquático</h5>
+          <p>A beleza e os mistérios nas profundezas do oceno.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="fotos/huji.jpg" class="d-block w-100 banner_padrao" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Artigo para baixar <a class="links-download" href="https://newreleasesbook.com/?book=0190250178" target="_blank"><i class="fas fa-cloud-download-alt">  Clique aqui!</i></a></h5>
+          <p>Artigo e-book sobre as mudanças climáticas.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!--FIM CARROSSEL-->
+
+    <h4 id="scrollspyHeading1">Collapse</h4>
+  
+  <!--COLLAPSE-->
+  <p>
+    <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Aventura registrada</a>
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Reino Sub-aquático</button>
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Artigo para baixar</button>
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Mostrar/Esconder</button>
+  </p>
+  <div class="row">
+    <div class="col">
+      <div class="collapse multi-collapse" id="multiCollapseExample1">
+        <div class="card card-body">
+          Registrando os melhores momentos da vida.
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="collapse multi-collapse" id="multiCollapseExample2">
+        <div class="card card-body">
+          A beleza e os mistérios nas profundezas do oceno.
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="collapse multi-collapse" id="multiCollapseExample3">
+        <div class="card card-body">
+          Artigo e-book sobre as mudanças climáticas.<a class="links-download-collapse" href="https://newreleasesbook.com/?book=0190250178" target="_blank"><i class="fas fa-cloud-download-alt">  Clique aqui!</i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--FIM COLLAPSE-->
+
+    <h4 id="scrollspyHeading1"><i class="fas fa-headset"></i> Toasts</h4>
+  
+    <!--TOASTS-->
+  <button type="button" class="btn btn-primary" id="liveToastBtn">Posso te ajudar?</button>
+
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="fotos/fale-conosco.png" class="rounded me-2" alt="...">
+      <strong class="me-auto"><i class="fas fa-headset"></i>Adm Chat</strong>
+      <small>11 mins atrás.</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Olá aluno IEP! Posso te ajudar com alguma dúvida?
+    </div>
+  </div>
+  </div>
+  <!--FIM TOASTS-->
+
+  <h4 id="scrollspyHeading1"><i class="far fa-newspaper"></i> Primeiro texto</h4>
+
+    <p><p>Lorem ipsum dolor sit amet consectetur adipiscing elit curae magna gravida, a scelerisque fusce accumsan duis auctor sociosqu habitant. Dis accumsan feugiat praesent penatibus massa quisque fusce risus etiam ornare lorem ut vehicula, class eros primis sociosqu et vivamus habitasse nullam enim egestas eget purus. Interdum dis hac natoque consectetur leo at ut ipsum mi, vel felis rutrum himenaeos egestas parturient vulputate tempus, nostra lectus justo varius neque risus volutpat a. Hac nisi enim rutrum cursus at ornare diam praesent, tempor curabitur adipiscing tincidunt condimentum viverra sapien faucibus, platea accumsan lacinia sem purus parturient posuere. Dapibus purus pulvinar varius facilisis vel convallis, ridiculus dictum consequat magna curabitur, hac enim sagittis cras eleifend. Curae aptent cursus inceptos congue tellus pellentesque, senectus ridiculus pharetra consequat placerat suspendisse, per potenti tempor dictum class. Dolor mattis ridiculus consequat amet nam eros himenaeos neque maximus auctor, fringilla accumsan senectus duis non curabitur sed a. Hac elit facilisis natoque per massa leo pellentesque faucibus, eget imperdiet sem class justo eros purus, ipsum vitae ultrices nunc suspendisse lacus in. Mattis nisi fusce rutrum feugiat orci ultricies ornare dapibus, suscipit porttitor nostra curabitur curae tortor auctor a, phasellus libero scelerisque sit sapien montes eleifend.</p>
+
+    <p>Convallis nibh a tempus semper egestas dictumst laoreet elit viverra, lectus arcu netus ad proin penatibus maximus gravida feugiat, montes euismod per vestibulum nostra auctor mi class. Duis interdum justo eros rhoncus nam magna fringilla integer elementum, vel auctor aenean nullam praesent facilisis phasellus class, lorem platea nisl curabitur fames vitae ridiculus tincidunt. Curabitur interdum risus urna magna fermentum amet sagittis vitae, habitant molestie lectus pellentesque sollicitudin mi felis senectus nascetur, aenean congue adipiscing lacinia per feugiat tempor. Ante tristique tempor massa netus arcu ut hac donec enim parturient, vehicula interdum duis sociosqu vitae suscipit curabitur dictumst mi, libero sapien semper per nullam molestie porttitor commodo dictum. Imperdiet mi nostra vivamus facilisis ridiculus orci ornare ultricies conubia, vulputate pulvinar enim placerat ultrices fermentum netus feugiat purus efficitur, suscipit posuere a neque aliquam quam molestie dis. Ornare ultrices scelerisque volutpat eros non pulvinar congue pellentesque ad porta cubilia vel, sociosqu nec felis sit habitasse taciti tortor sagittis blandit semper. Facilisis viverra rhoncus lectus ac feugiat id non nunc accumsan scelerisque integer vivamus pretium, enim fringilla euismod molestie interdum tincidunt taciti porttitor natoque dignissim ad eget.</p>
+
+    <p>Aenean facilisi tincidunt risus malesuada tempor eleifend torquent donec, commodo quam suscipit sapien fames consectetur primis, elit laoreet vestibulum himenaeos metus in nibh. Nam malesuada quisque a diam penatibus felis sagittis, duis cursus curae ex tristique purus, pretium nisi bibendum urna parturient lacus. Montes nec congue magna varius ex auctor velit natoque, eleifend lectus netus torquent porta ullamcorper dignissim interdum placerat, suscipit tortor integer vivamus egestas magnis porttitor. Nascetur id himenaeos aenean egestas ante pulvinar gravida ligula massa, platea vehicula auctor nostra sed a cubilia ultrices nec sapien, dapibus magna cras dictum malesuada etiam viverra ut. Eget conubia laoreet id aenean adipiscing tempus lectus felis magna nullam, auctor maximus condimentum feugiat ex gravida class ultrices magnis, praesent himenaeos cras pellentesque faucibus elit arcu massa nunc.</p>
+
+    <p>Enim consequat montes pharetra dolor vestibulum tempus tristique, libero habitasse mi feugiat penatibus metus hac, conubia bibendum sagittis curae tempor nunc. Sapien pellentesque maximus mollis commodo turpis class nam, sodales mauris sem morbi phasellus rhoncus, nostra volutpat nullam placerat diam habitant. Per vitae dapibus pharetra mi semper vehicula ad vulputate egestas lorem consectetur class maecenas massa, habitasse eu proin nec aenean montes ultrices libero eget convallis malesuada metus. Ad mus ligula lacinia vel sociosqu pellentesque ultricies egestas porta in mollis elementum, taciti amet cras nibh sodales bibendum metus dignissim cursus curabitur commodo. Quisque dolor risus quam massa maximus et lacus efficitur sem, magnis tincidunt cursus lectus egestas pellentesque condimentum tellus at, lacinia ac integer nullam eu pharetra mauris auctor. Inceptos enim eleifend consectetur iaculis montes laoreet mus, nunc sem dignissim curabitur felis vulputate, lorem ad taciti pellentesque quis dapibus. Tempor mus vehicula consectetur natoque fringilla laoreet rhoncus urna aliquet sollicitudin praesent dis imperdiet, amet elit eu fames commodo senectus sit posuere leo ligula interdum magna. Lacus lectus amet nibh elit varius aptent natoque nascetur praesent morbi, euismod leo libero arcu lorem netus ultricies ligula cursus vivamus adipiscing, vehicula nullam donec tortor turpis aliquet efficitur posuere senectus.</p>
+
+    <p>Praesent laoreet vestibulum ipsum torquent neque egestas curae, quam nec porttitor facilisi tincidunt molestie, velit nulla feugiat curabitur magna viverra. Senectus iaculis nisl sem semper ex, nulla dictum donec dignissim pellentesque, orci habitasse euismod efficitur. Sapien eleifend volutpat interdum curae tellus conubia, ornare fringilla risus sociosqu amet potenti mus, ante turpis convallis auctor felis. Ornare penatibus enim primis dolor praesent tempus magnis massa eleifend, malesuada pretium potenti neque tristique nullam dapibus tortor, mi fermentum lectus vivamus facilisi curae maximus elit. Nulla nisi placerat tortor condimentum tempus senectus hac, quisque pulvinar potenti montes habitant integer egestas litora, consequat diam sodales fringilla nisl tellus.</p></p>
+
+  <h4 id="scrollspyHeading1"><i class="far fa-newspaper"></i> Segundo texto</h4>
+
+    <p><p>Lorem ipsum dolor sit amet consectetur adipiscing elit curae magna gravida, a scelerisque fusce accumsan duis auctor sociosqu habitant. Dis accumsan feugiat praesent penatibus massa quisque fusce risus etiam ornare lorem ut vehicula, class eros primis sociosqu et vivamus habitasse nullam enim egestas eget purus. Interdum dis hac natoque consectetur leo at ut ipsum mi, vel felis rutrum himenaeos egestas parturient vulputate tempus, nostra lectus justo varius neque risus volutpat a. Hac nisi enim rutrum cursus at ornare diam praesent, tempor curabitur adipiscing tincidunt condimentum viverra sapien faucibus, platea accumsan lacinia sem purus parturient posuere. Dapibus purus pulvinar varius facilisis vel convallis, ridiculus dictum consequat magna curabitur, hac enim sagittis cras eleifend. Curae aptent cursus inceptos congue tellus pellentesque, senectus ridiculus pharetra consequat placerat suspendisse, per potenti tempor dictum class. Dolor mattis ridiculus consequat amet nam eros himenaeos neque maximus auctor, fringilla accumsan senectus duis non curabitur sed a. Hac elit facilisis natoque per massa leo pellentesque faucibus, eget imperdiet sem class justo eros purus, ipsum vitae ultrices nunc suspendisse lacus in. Mattis nisi fusce rutrum feugiat orci ultricies ornare dapibus, suscipit porttitor nostra curabitur curae tortor auctor a, phasellus libero scelerisque sit sapien montes eleifend.</p>
+
+    <p>Convallis nibh a tempus semper egestas dictumst laoreet elit viverra, lectus arcu netus ad proin penatibus maximus gravida feugiat, montes euismod per vestibulum nostra auctor mi class. Duis interdum justo eros rhoncus nam magna fringilla integer elementum, vel auctor aenean nullam praesent facilisis phasellus class, lorem platea nisl curabitur fames vitae ridiculus tincidunt. Curabitur interdum risus urna magna fermentum amet sagittis vitae, habitant molestie lectus pellentesque sollicitudin mi felis senectus nascetur, aenean congue adipiscing lacinia per feugiat tempor. Ante tristique tempor massa netus arcu ut hac donec enim parturient, vehicula interdum duis sociosqu vitae suscipit curabitur dictumst mi, libero sapien semper per nullam molestie porttitor commodo dictum. Imperdiet mi nostra vivamus facilisis ridiculus orci ornare ultricies conubia, vulputate pulvinar enim placerat ultrices fermentum netus feugiat purus efficitur, suscipit posuere a neque aliquam quam molestie dis. Ornare ultrices scelerisque volutpat eros non pulvinar congue pellentesque ad porta cubilia vel, sociosqu nec felis sit habitasse taciti tortor sagittis blandit semper. Facilisis viverra rhoncus lectus ac feugiat id non nunc accumsan scelerisque integer vivamus pretium, enim fringilla euismod molestie interdum tincidunt taciti porttitor natoque dignissim ad eget.</p>
+    
+    <p>Aenean facilisi tincidunt risus malesuada tempor eleifend torquent donec, commodo quam suscipit sapien fames consectetur primis, elit laoreet vestibulum himenaeos metus in nibh. Nam malesuada quisque a diam penatibus felis sagittis, duis cursus curae ex tristique purus, pretium nisi bibendum urna parturient lacus. Montes nec congue magna varius ex auctor velit natoque, eleifend lectus netus torquent porta ullamcorper dignissim interdum placerat, suscipit tortor integer vivamus egestas magnis porttitor. Nascetur id himenaeos aenean egestas ante pulvinar gravida ligula massa, platea vehicula auctor nostra sed a cubilia ultrices nec sapien, dapibus magna cras dictum malesuada etiam viverra ut. Eget conubia laoreet id aenean adipiscing tempus lectus felis magna nullam, auctor maximus condimentum feugiat ex gravida class ultrices magnis, praesent himenaeos cras pellentesque faucibus elit arcu massa nunc.</p>
+    
+    <p>Enim consequat montes pharetra dolor vestibulum tempus tristique, libero habitasse mi feugiat penatibus metus hac, conubia bibendum sagittis curae tempor nunc. Sapien pellentesque maximus mollis commodo turpis class nam, sodales mauris sem morbi phasellus rhoncus, nostra volutpat nullam placerat diam habitant. Per vitae dapibus pharetra mi semper vehicula ad vulputate egestas lorem consectetur class maecenas massa, habitasse eu proin nec aenean montes ultrices libero eget convallis malesuada metus. Ad mus ligula lacinia vel sociosqu pellentesque ultricies egestas porta in mollis elementum, taciti amet cras nibh sodales bibendum metus dignissim cursus curabitur commodo. Quisque dolor risus quam massa maximus et lacus efficitur sem, magnis tincidunt cursus lectus egestas pellentesque condimentum tellus at, lacinia ac integer nullam eu pharetra mauris auctor. Inceptos enim eleifend consectetur iaculis montes laoreet mus, nunc sem dignissim curabitur felis vulputate, lorem ad taciti pellentesque quis dapibus. Tempor mus vehicula consectetur natoque fringilla laoreet rhoncus urna aliquet sollicitudin praesent dis imperdiet, amet elit eu fames commodo senectus sit posuere leo ligula interdum magna. Lacus lectus amet nibh elit varius aptent natoque nascetur praesent morbi, euismod leo libero arcu lorem netus ultricies ligula cursus vivamus adipiscing, vehicula nullam donec tortor turpis aliquet efficitur posuere senectus.</p>
+    
+    <p>Praesent laoreet vestibulum ipsum torquent neque egestas curae, quam nec porttitor facilisi tincidunt molestie, velit nulla feugiat curabitur magna viverra. Senectus iaculis nisl sem semper ex, nulla dictum donec dignissim pellentesque, orci habitasse euismod efficitur. Sapien eleifend volutpat interdum curae tellus conubia, ornare fringilla risus sociosqu amet potenti mus, ante turpis convallis auctor felis. Ornare penatibus enim primis dolor praesent tempus magnis massa eleifend, malesuada pretium potenti neque tristique nullam dapibus tortor, mi fermentum lectus vivamus facilisi curae maximus elit. Nulla nisi placerat tortor condimentum tempus senectus hac, quisque pulvinar potenti montes habitant integer egestas litora, consequat diam sodales fringilla nisl tellus.</p></p>
+
+  </div>
+  <!--FIM SCROLLSPY-->
+
+  
+
+  
+  
+  
+
+</body>
+</html>
+
+<!-- ATIVANDO DEMOS EM JAVASCRIPT DO BOOTSTRAP -->
+<script>
+
+  /* SHOW LIVE TOAST */
+  var toastTrigger = document.getElementById('liveToastBtn')
+  var toastLiveExample = document.getElementById('liveToast')
+  if (toastTrigger) {
+    toastTrigger.addEventListener('click', function () {
+      var toast = new bootstrap.Toast(toastLiveExample)
+
+      toast.show()
+    })
+  }
+  /* FIM SHOW LIVE TOAST */
+
+</script>
