@@ -1,0 +1,65 @@
+NOME: Fernando Henrique Godoi
+
+1 - TRAGA A QUANTIDADE DE ATENDIMENTOS AGRUPADOS POR CODIGO DE PACIENTE
+
+SELECT atd.cd_paciente AS codigo_paciente, pac.nm_paciente AS Nome_paciente, COUNT(*) AS qtd_atendimento 
+FROM atendimento AS atd
+INNER JOIN paciente AS pac
+ON pac.cd_paciente = atd.cd_paciente
+GROUP BY atd.cd_paciente;
+
+2 - TRAGA A SOMA DO VALOR DO ATENDIMENTO AGRUPADO POR CONVENIO
+
+SELECT atd.cd_convenio AS codigo_convenio, conv.nm_convenio as nome_convenio,
+pac.nm_paciente AS Nome_paciente,
+SUM(atd.vl_atendimento) AS Valor_atendimento 
+FROM atendimento AS atd
+INNER JOIN convenio AS conv
+ON conv.cd_convenio = atd.cd_convenio
+INNER JOIN paciente AS pac
+ON pac.cd_paciente = atd.cd_paciente
+GROUP BY conv.nm_convenio;
+
+3 - TRAGA O ATENDIMENTO MAIS RECENTE AGRUPADO PELO CODIGO DE PACIENTE
+
+SELECT atd.cd_paciente as codigo_paciente, pac.nm_paciente AS Nome_paciente, 
+MAX(atd.dt_atendimento) as Mais_recente
+FROM atendimento AS atd
+INNER JOIN paciente AS pac
+ON pac.cd_paciente = atd.cd_paciente
+GROUP BY atd.cd_paciente;
+
+4 - TRAGA O ATENDIMENTO MAIS ANTIGO AGRUPADO POR CODIGO DE ESPECIALIDADE 
+
+SELECT atd.cd_especialidade as codigo_especialidade, pac.nm_paciente AS Nome_paciente, 
+MIN(atd.dt_atendimento) as Mais_antigo
+FROM atendimento AS atd
+INNER JOIN paciente AS pac
+ON pac.cd_paciente = atd.cd_paciente
+GROUP BY atd.cd_especialidade;
+
+5 - TRAGA A SOMA DO VALOR DO ATENDIMENTO AGRUPADO POR PACIENTE ONDE O CODIGO DO CONVENIO ESTEJA ENTRE 1 e 3
+
+SELECT atd.cd_paciente AS codigo_paciente, pac.nm_paciente AS Nome_paciente, 
+SUM(atd.vl_atendimento) AS Soma_valor
+FROM atendimento AS atd
+INNER JOIN paciente AS pac
+ON pac.cd_paciente = atd.cd_paciente
+WHERE atd.cd_convenio BETWEEN 1 AND 3
+GROUP BY atd.cd_paciente;
+
+ANEXO:
+-- SELECT atd.CD_ATENDIMENTO, 
+-- atd.CD_PACIENTE, pac.NM_PACIENTE, 
+-- atd.CD_CONVENIO, conv.NM_CONVENIO, 
+-- atd.CD_ESPECIALIDADE, espc.NM_ESPECIALIDADE,
+-- conv.cooparticipacao,
+-- atd.VL_ATENDIMENTO,
+-- (conv.cooparticipacao / 100) * atd.VL_ATENDIMENTO AS VALOR_A_PAGAR
+-- FROM atendimento AS atd
+-- INNER JOIN paciente AS pac
+-- ON pac.CD_PACIENTE = atd.CD_PACIENTE
+-- INNER JOIN convenio as conv
+-- ON conv.CD_CONVENIO = atd.CD_CONVENIO
+-- INNER JOIN especialidade AS espc
+-- ON espc.CD_ESPECIALIDADE = atd.CD_ESPECIALIDADE;
