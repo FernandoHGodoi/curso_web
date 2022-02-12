@@ -1,0 +1,28 @@
+/*TITULO DA PAGINA*/
+
+.div_titulo{
+
+    border-bottom: solid 1px #c3c3c3; 
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}
+
+h10{
+
+    font-size: 22px;
+    font-weight: bold;
+    color: #3a3a3a;
+
+}
+
+/*TABELAS*/
+
+table{
+    
+    text-align: center;
+}
+
+th{
+    background-color: #3185c1 !important;
+    color: #ffffff !important;
+}
