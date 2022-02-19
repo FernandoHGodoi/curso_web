@@ -41,6 +41,9 @@
                 <li class="nav-item">
                 <a class="nav-link" href="convenios.php">Convênios</a>
                 </li>
+                <li class="nav-item">
+                <a class="nav-link" href="especialidades.php">Especialidades</a>
+                </li>
             </ul>
             </div>
         </div>
