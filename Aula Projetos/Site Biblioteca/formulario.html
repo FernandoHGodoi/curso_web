@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <!---
+    FORMULÁRIO DE LOGIN
+    email_login (type=”text”)
+    senha (type=”password”)
+    tipo_usuario <select>
+    login <button>
+    esqueci_senha <a>
+    cadastre_aqui <button>
+    -->
+
+    <form id="login" action="formulario.html" target="_blank" method="post">
+
+        <h3>Login</h3>
+        
+        <label for="email_login">Email</label><br>
+        <input type="text" id="email_login" name="email_login"><br><br>
+        
+        <label for="senha_login">Senha</label><br>
+        <input type="password" id="senha" name="senha"><br><br>
+        
+        <label for="tipo_usuario">Tipo de usuário</label>
+        <select name="tipo_usuario" id="tipo_usuario">
+            <option value="cliente">Cliente</option>
+            <option value="Administrador">Administrador</option>
+        </select>
+        <br><br>
+        <button type="submit" form_id="login">Login</button><br><br>
+
+        <a href="formulario.html">Esqueceu sua senha?</a>
+
+        <button type="submit" form_id="login">cadastre aqui</button><br><br>
+
+    </form>
+
+    <!--
+    FORMULÁRIO DE CADASTRO CLIENTE
+    nm_cliente (type=”text”)
+    sexo <select> (“feminino, masculino, não binário, outros”)
+    cpf (type=”numer”)
+    dt_nascimento (type=”date”)
+    rua (type=”text”)
+    bairro (type=”text”)
+    numero (type=”text”)
+    email (type=”text”)
+    telefone (type=”number”)
+    senha (type=”password”)
+    repetir_senha (type=”password”)
+    pergunta_seguranca <select> (“cor preferida?, nome do cachorro?, prato preferido?”)
+    resposta_seguranca (type=”text”)
+    comprovante_endereco (type=”file”)
+    cadastrar <button>
+    -->
+
+    
+    <form id="cad_cliente" action="formulario.html" target="_blank" method="post">
+
+        <h3>Cadastrar cliente</h3>
+
+        <label for="nm_cliente">Nome</label><br>
+        <input type="text" id="nm_cliente" name="nm_cliente"><br><br>
+
+        <label for="sexo">Sexo</label>
+        <select name="sexo" id="sexo">
+            <option value="feminino">Feminino</option>
+            <option value="administrador">Masculino</option>
+            <option value="nao_binario">Não binário</option>
+            <option value="outro">Prefiro não dizer</option>
+        </select><br><br>
+
+        <label for="cpf">CPF</label><br>
+        <input type="number" id="cpf" name="cpf"><br><br>
+
+        <label for="dt_nascimento">Nascimento</label><br>
+        <input type="date" id="dt_nascimento" name="dt_nascimento"><br><br>
+        
+        <label for="rua">Rua</label><br>
+        <input type="text" id="rua" name="rua"><br><br>
+        
+        <label for="bairro">Bairro</label><br>
+        <input type="text" id="bairro" name="bairro"><br><br>
+
+        <label for="numero">Número</label><br>
+        <input type="number" id="numero" name="numero"><br><br>
+
+        <label for="email">Email</label><br>
+        <input type="text" id="email" name="email"><br><br>
+
+        <label for="telefone">Telefone</label><br>
+        <input type="text" id="telefone" name="telefone"><br><br>
+
+        <label for="senha_login">Senha</label><br>
+        <input type="password" id="senha" name="senha"><br><br>
+
+        <label for="repetir_senha">Repita a senha</label><br>
+        <input type="password" id="repetir_senha" name="repetir_senha"><br><br>
+
+        <label for="pergunta_seguranca">Pergunta de segurança</label><br>
+        <select name="pergunta_seguranca" id="pergunta_seguranca">
+            <option value="cor">Cor preferida?</option>
+            <option value="dog">Nome do último cachorro?</option>
+            <option value="prato">Prato preferido?</option>
+        </select><br><br>
+        
+        <label for="resposta_seguranca">Responda à pergunta</label><br>
+        <input type="text" id="resposta_seguranca" name="resposta_seguranca"><br><br>
+
+        <label for="comprovante_endereco">Envie um comprovante de endereço</label><br>
+        <input type="file" id="comprovante_endereco" name="comprovante_endereco"><br><br>
+        
+        <button type="submit" form_id="cad_cliente">Cadastrar</button><br><br>
+
+    </form>
+
+    <!--
+    FORMULÁRIO DE CADASTRO LIVRO
+    nm_livro (type=”text”)
+    edicao (type=number)
+    editora (type=”text”)
+    categoria (type="text")
+    nm_autor (type=”text”)
+    dt_nasc (type="date")
+    capa (type=”file”)
+    valor_unitario (type=”float”)
+    cadastrar <button>
+    -->
+
+    <form id="cad_livro" action="formulario.html" target="_blank" method="post">
+
+        <h3>Cadastrar livro</h3>
+        
+        <label for="nm_livro">Título do livro</label><br>
+        <input type="text" id="nm_livro" name="nm_livro"><br><br>
+        
+        <label for="edicao">Edição</label><br>
+        <input type="text" id="edicao" name="edicao"><br><br>
+
+        <label for="editora">Editora</label><br>
+        <input type="text" id="editora" name="editora"><br><br>
+        
+        <label for="categoria">Categoria</label><br>
+        <input type="text" id="categoria" name="categoria"><br><br>
+
+        <label for="nm_autor">Nome do autor</label><br>
+        <input type="text" id="nm_autor" name="nm_autor"><br><br>
+        
+        <label for="dt_nasc">Nascimento do autor</label><br>
+        <input type="date" id="dt_nasc" name="dt_nasc"><br><br>
+
+        <label for="capa">Envie uma imagem da capa</label><br>
+        <input type="file" id="capa" name="capa"><br><br>
+
+        <!--ESTE VALOR MULTIPLICADOR VAI MULTIPLICAR PELO VALOR DA DIÁRIA (R$1)-->
+        <label for="valor_multiplicador">Valor multipicador</label><br>
+        <input type="number" id="valor_multiplicador" name="valor_multiplicador"><br><br>
+        
+        <button type="submit" form_id="cad_livro">Cadastrar</button><br><br>
+
+    </form>
+
+    <!--
+    FORMULÁRIO DE ATUALIZAÇÃO CLIENTE
+    nm_cliente (type=”text”)
+    sexo <select> (“feminino, masculino, não binário, outros”)
+    cpf (type=”numer”)
+    dt_nascimento (type=”date”)
+    rua (type=”text”)
+    bairro (type=”text”)
+    numero (type=”text”)
+    email (type=”text”)
+    telefone (type=”number”)
+    pergunta_seguranca <select> (“cor preferida?, nome do cachorro?, prato preferido?”)
+    resposta_seguranca (type=”text”)
+    comprovante_endereco (type=”file”)
+    atualizar <button>
+    -->
+
+    <form id="update_cliente" action="formulario.html" target="_blank" method="post">
+
+        <h3>Atualizar cliente</h3>
+
+        <label for="nm_cliente">Nome</label><br>
+        <input type="text" id="nm_cliente" name="nm_cliente"><br><br>
+
+        <label for="sexo">Sexo</label>
+        <select name="sexo" id="sexo">
+            <option value="feminino">Feminino</option>
+            <option value="administrador">Masculino</option>
+            <option value="nao_binario">Não binário</option>
+            <option value="outro">Prefiro não dizer</option>
+        </select><br><br>
+
+        <label for="cpf">CPF</label><br>
+        <input type="number" id="cpf" name="cpf"><br><br>
+
+        <label for="dt_nascimento">Nascimento</label><br>
+        <input type="date" id="dt_nascimento" name="dt_nascimento"><br><br>
+        
+        <label for="rua">Rua</label><br>
+        <input type="text" id="rua" name="rua"><br><br>
+        
+        <label for="bairro">Bairro</label><br>
+        <input type="text" id="bairro" name="bairro"><br><br>
+
+        <label for="numero">Número</label><br>
+        <input type="number" id="numero" name="numero"><br><br>
+
+        <label for="email">Email</label><br>
+        <input type="text" id="email" name="email"><br><br>
+
+        <label for="telefone">Telefone</label><br>
+        <input type="text" id="telefone" name="telefone"><br><br>
+
+        <label for="pergunta_seguranca">Pergunta de segurança</label><br>
+        <select name="pergunta_seguranca" id="pergunta_seguranca">
+            <option value="cor">Cor preferida?</option>
+            <option value="dog">Nome do último cachorro?</option>
+            <option value="prato">Prato preferido?</option>
+        </select><br><br>
+        
+        <label for="resposta_seguranca">Responda à pergunta</label><br>
+        <input type="text" id="resposta_seguranca" name="resposta_seguranca"><br><br>
+
+        <label for="comprovante_endereco">Envie um comprovante de endereço</label><br>
+        <input type="file" id="comprovante_endereco" name="comprovante_endereco"><br><br>
+        
+        <button type="submit" form_id="update_cliente">Atualizar</button><br><br>
+
+    </form>
+
+    <!--
+    FORMULÁRIO DE REDEFINICAO DE SENHA
+    email (“type=”text””)
+    resposta_seguranca (“type=text”)
+    Redefinir <button>
+    -->
+
+    <form id="redefinicao" action="formulario.html" target="_blank" method="post">
+
+        <h3>Redefinir senha</h3>
+
+        <label for="email">Email</label><br>
+        <input type="text" id="email" name="email"><br><br>
+
+        <label for="resposta_seguranca">Responda à pergunta de segurança</label><br>
+        <input type="text" id="resposta_seguranca" name="resposta_seguranca"><br><br>
+
+        <button type="submit" form_id="redefinicao">Redefinir</button><br><br>
+
+    </form>
+
+    <!--
+    FORMULÁRIO DE ATUALIZAÇÃO DE LIVRO
+    titulo_livro (type=”text”)
+    editora (type=”text”)
+    ano (type=”number”)
+    autor (type=”text”)
+    genero (type=”text”)
+    paginas_livro (type=”number”)
+    capa (type=”file”)
+    atualizar <button>
+    -->
+
+    <form id="update_livro" action="formulario.html" target="_blank" method="post">
+
+        <h3>Atualizar livro</h3>
+        
+        <label for="nm_livro">Título do livro</label><br>
+        <input type="text" id="nm_livro" name="nm_livro"><br><br>
+        
+        <label for="edicao">Edição</label><br>
+        <input type="text" id="edicao" name="edicao"><br><br>
+
+        <label for="editora">Editora</label><br>
+        <input type="text" id="editora" name="editora"><br><br>
+        
+        <label for="categoria">Categoria</label><br>
+        <input type="text" id="categoria" name="categoria"><br><br>
+
+        <label for="nm_autor">Nome do autor</label><br>
+        <input type="text" id="nm_autor" name="nm_autor"><br><br>
+        
+        <label for="dt_nasc">Nascimento do autor</label><br>
+        <input type="date" id="dt_nasc" name="dt_nasc"><br><br>
+
+        <label for="capa">Envie uma imagem da capa</label><br>
+        <input type="file" id="capa" name="capa"><br><br>
+
+        <label for="valor_multiplicador">Valor multipicador</label><br>
+        <input type="number" id="valor_multiplicador" name="valor_multiplicador"><br><br>
+        
+        <button type="submit" form_id="cad_livro">Atualizar</button><br><br>
+
+    </form>
+
+    <!--
+    FORMULÁRIO DE ALUGUEL
+    dt_retirada (type="date")
+    dt_devolucao (type="date")
+    valor_total (type=”float”) obs.: form apenas aparece o valor, não é editável.
+    endereco_retirada <select> (rua a, avenida b, rua c)
+    confirmar <button>
+    -->
+
+    <form id="aluguel" action="formulario.html" target="_blank" method="post">
+
+        <h3>Aluguel</h3>
+
+        <!--AINDA PENSO EM ORGANIZAR POR CATEGORIA-->
+        <label for="dt_retirada">Selecione o(s) livro(s) abaixo</label><br>
+        <div>
+            <input type="checkbox" id="livro1" name="livro1">
+            <label for="livro1">Livro 1 - Autor 1</label>
+        </div>
+        <div>
+            <input type="checkbox" id="livro2" name="livro2">
+            <label for="livro2">Livro 2 - Autor 2</label>
+        </div>  
+        <div>
+            <input type="checkbox" id="livro3" name="livro3">
+            <label for="livro3">Livro 3 - Autor 3</label>
+        </div>
+        <div>
+            <input type="checkbox" id="livro2" name="livro2">
+            <label for="livro2">Livro 4 - Autor 4</label>
+        </div>          
+        <br><br>
+
+        <label for="dt_retirada">Data de retirada</label><br>
+        <input type="date" id="dt_retirada" name="dt_retirada"><br><br>
+        
+        <label for="dt_devolucao">Data de devolução</label><br>
+        <input type="date" id="dt_devolucao" name="dt_devolucao"><br><br>
+
+        <!--VALOR DA DIÁRIA MUDA CONFORME O LIVRO-->
+        <label for="valor_dia">Valor da diária</label><br>R$
+        <input type="text" id="valor_dia" name="valor_dia"><br><br>
+        
+        <!--form apenas aparece o valor, não é editável
+        EXEMPLO: SE O VALOR DA DIÁRIA FOR DE R$1,00 LOGO O VALOR 
+        SERÁ MULTIPLICADO PELOS DIAS DEFINIDOS ANTERIORMENTE-->
+        <label for="valor_total">Valor total</label><br>R$
+        <input type="text" id="valor_total" name="valor_total"><br><br>
+
+        <label for="endereco_retirada">Escolha o endereço p/ retirada:</label><br>
+        <select name="endereco_retirada" id="endereco_retirada">
+            <option value="endereco1">Rua A, 222</option>
+            <option value="endereco2">Avenida B, 475</option>
+            <option value="endereco3">Rua C, 100</option>
+        </select><br><br>
+
+        <button type="submit" form_id="aluguel">Finalizar</button><br><br>
+
+    </form>
+
+    <!--
+    FORMULÁRIO DE ESTOQUE
+    id_livro (type="number")
+    qtd_livro (type=”number”)
+    -->
+    
+    <form id="estoque" action="formulario.html" target="_blank" method="post">
+
+        <h3>Estoque</h3>
+        
+        <label for="id_livro">Código do livro</label><br>
+        <input type="number" id="id_livro" name="id_livro"><br><br>
+        
+        <label for="qtd_livro">Quantidade</label><br>
+        <input type="number" id="qtd_livro" name="qtd_livro"><br><br>
+
+        <button type="submit" form_id="estoque">Finalizar</button><br><br>
+
+    </form>
+    
+</body>
+</html>
