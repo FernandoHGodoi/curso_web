@@ -5,6 +5,7 @@ Login bootstrap https://getbootstrap.com/docs/5.1/examples/sign-in/
 Formulário de pagamento bootstrap https://getbootstrap.com/docs/5.1/examples/checkout/
 Examples features https://getbootstrap.com/docs/5.1/examples/features/
 site templates free https://technext.github.io/free-bundle-2022/v1.0.0/
+Tema utilizado https://themewagon.com/themes/corona-free-responsive-bootstrap-4-admin-dashboard-template/
 
 
 Pagina inicial
