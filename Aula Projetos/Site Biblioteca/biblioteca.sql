@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 14-Maio-2022 às 12:18
+-- Tempo de geração: 21-Maio-2022 às 12:11
 -- Versão do servidor: 10.4.22-MariaDB
 -- versão do PHP: 8.0.13
 
@@ -24,6 +24,25 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `administrador`
+--
+
+CREATE TABLE `administrador` (
+  `id_funcionario` int(11) NOT NULL,
+  `matricula` int(11) DEFAULT NULL,
+  `nm_funcionario` varchar(255) DEFAULT NULL,
+  `sexo` varchar(255) DEFAULT NULL,
+  `cpf` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `telefone` varchar(255) DEFAULT NULL,
+  `senha` varchar(255) DEFAULT NULL,
+  `resposta_seg` varchar(255) DEFAULT NULL,
+  `foto` blob DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `aluguel`
 --
 
@@ -32,25 +51,23 @@ CREATE TABLE `aluguel` (
   `dt_retirada` date DEFAULT NULL,
   `dt_devolucao` date DEFAULT NULL,
   `livro_id` int(11) DEFAULT NULL,
-  `cliente_id` int(11) DEFAULT NULL,
-  `endereco_retirada` varchar(255) DEFAULT NULL,
-  `valor_total` float DEFAULT NULL
+  `cliente_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `aluguel`
 --
 
-INSERT INTO `aluguel` (`aluguel_id`, `dt_retirada`, `dt_devolucao`, `livro_id`, `cliente_id`, `endereco_retirada`, `valor_total`) VALUES
-(1, '2022-04-07', '2022-04-12', 1, 2, NULL, NULL),
-(2, '2022-04-07', '2022-04-12', 2, 6, NULL, NULL),
-(3, '2022-04-05', '2022-04-10', 5, 3, NULL, NULL),
-(4, '2022-04-05', '2022-04-10', 3, 1, NULL, NULL),
-(5, '2022-04-05', '2022-04-10', 4, 1, NULL, NULL),
-(6, '2022-04-05', '2022-04-30', 5, 1, NULL, NULL),
-(7, '2022-04-05', '2022-04-30', 1, 2, NULL, NULL),
-(8, '2022-04-07', '2022-04-12', 6, 6, NULL, NULL),
-(9, '2022-03-05', '2022-03-10', 10, 5, NULL, NULL);
+INSERT INTO `aluguel` (`aluguel_id`, `dt_retirada`, `dt_devolucao`, `livro_id`, `cliente_id`) VALUES
+(1, '2022-04-07', '2022-04-12', 1, 2),
+(2, '2022-04-07', '2022-04-12', 2, 6),
+(3, '2022-04-05', '2022-04-10', 5, 3),
+(4, '2022-04-05', '2022-04-10', 3, 1),
+(5, '2022-04-05', '2022-04-10', 4, 1),
+(6, '2022-04-05', '2022-04-30', 5, 1),
+(7, '2022-04-05', '2022-04-30', 1, 2),
+(8, '2022-04-07', '2022-04-12', 6, 6),
+(9, '2022-03-05', '2022-03-10', 10, 5);
 
 -- --------------------------------------------------------
 
@@ -116,23 +133,20 @@ CREATE TABLE `cliente` (
   `bairro` varchar(255) DEFAULT NULL,
   `numero` int(11) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
-  `telefone` varchar(255) DEFAULT NULL,
-  `senha` varchar(255) DEFAULT NULL,
-  `resposta_seg` varchar(255) DEFAULT NULL,
-  `comp_endereco` blob DEFAULT NULL
+  `telefone` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `cliente`
 --
 
-INSERT INTO `cliente` (`cliente_id`, `nm_cliente`, `sexo`, `cpf`, `dt_nascimento`, `rua`, `bairro`, `numero`, `email`, `telefone`, `senha`, `resposta_seg`, `comp_endereco`) VALUES
-(1, 'João Augusto', NULL, NULL, '2002-05-03', 'Rua josé', 'Jardim Paulista', 25, NULL, '(12)99879-9598', NULL, NULL, NULL),
-(2, 'Julio Cesar', NULL, NULL, '2005-06-27', 'Rua Manacas', 'Jd. Oriente', 36, NULL, '(11)99595-9595', NULL, NULL, NULL),
-(3, 'Waldir Pereira', NULL, NULL, '1999-12-10', 'Rua Figueiras', 'Centro', 42, NULL, '(11)99632-5659', NULL, NULL, NULL),
-(4, 'Julia Andrade', NULL, NULL, '1985-11-16', 'Rua Vilaça', 'Jd. das industrias', 1111, NULL, '(12)99526-8549', NULL, NULL, NULL),
-(5, 'Maria da Silva', NULL, NULL, '1998-10-25', 'Rua Manacas', 'Centro', 255, NULL, '(12)91232-2659', NULL, NULL, NULL),
-(6, 'Marcia Maria', NULL, NULL, '2006-05-04', 'Av Dr. Heitor José', 'Centro', 177, NULL, '(12)99648-9564', NULL, NULL, NULL);
+INSERT INTO `cliente` (`cliente_id`, `nm_cliente`, `sexo`, `cpf`, `dt_nascimento`, `rua`, `bairro`, `numero`, `email`, `telefone`) VALUES
+(1, 'João Augusto', NULL, NULL, '2002-05-03', 'Rua josé', 'Jardim Paulista', 25, NULL, '(12)99879-9598'),
+(2, 'Julio Cesar', NULL, NULL, '2005-06-27', 'Rua Manacas', 'Jd. Oriente', 36, NULL, '(11)99595-9595'),
+(3, 'Waldir Pereira', NULL, NULL, '1999-12-10', 'Rua Figueiras', 'Centro', 42, NULL, '(11)99632-5659'),
+(4, 'Julia Andrade', NULL, NULL, '1985-11-16', 'Rua Vilaça', 'Jd. das industrias', 1111, NULL, '(12)99526-8549'),
+(5, 'Maria da Silva', NULL, NULL, '1998-10-25', 'Rua Manacas', 'Centro', 255, NULL, '(12)91232-2659'),
+(6, 'Marcia Maria', NULL, NULL, '2006-05-04', 'Av Dr. Heitor José', 'Centro', 177, NULL, '(12)99648-9564');
 
 -- --------------------------------------------------------
 
@@ -166,32 +180,40 @@ CREATE TABLE `livro` (
   `livro_id` int(11) NOT NULL,
   `nm_livro` varchar(255) DEFAULT NULL,
   `edicao` varchar(255) DEFAULT NULL,
+  `ano_pubicacao` varchar(255) DEFAULT NULL,
   `editora_id` int(11) NOT NULL,
   `categoria_id` int(11) NOT NULL,
   `autor_id` int(11) NOT NULL,
   `capa` blob DEFAULT NULL,
-  `valor_unitario` float DEFAULT NULL
+  `valor_multiplicador` float DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `livro`
 --
 
-INSERT INTO `livro` (`livro_id`, `nm_livro`, `edicao`, `editora_id`, `categoria_id`, `autor_id`, `capa`, `valor_unitario`) VALUES
-(1, 'Star Wars', '10', 1, 1, 2, NULL, NULL),
-(2, 'Guia dos Mochileiros', '2', 1, 1, 2, NULL, NULL),
-(3, 'Segunda Guerra', '1', 2, 3, 3, NULL, NULL),
-(4, 'Roma', '3', 3, 3, 4, NULL, NULL),
-(5, 'Quimica Avançada', '1', 3, 2, 5, NULL, NULL),
-(6, 'Laboratório', '10', 4, 2, 5, NULL, NULL),
-(7, 'Gramática', '6', 3, 5, 6, NULL, NULL),
-(8, 'Gramática 2', '6', 4, 5, 6, NULL, NULL),
-(9, 'Matemática Discreta', '5', 3, 4, 5, NULL, NULL),
-(10, 'Matemática Avançada', '10', 4, 4, 5, NULL, NULL);
+INSERT INTO `livro` (`livro_id`, `nm_livro`, `edicao`, `ano_pubicacao`, `editora_id`, `categoria_id`, `autor_id`, `capa`, `valor_multiplicador`) VALUES
+(1, 'Star Wars', '10', NULL, 1, 1, 2, NULL, NULL),
+(2, 'Guia dos Mochileiros', '2', NULL, 1, 1, 2, NULL, NULL),
+(3, 'Segunda Guerra', '1', NULL, 2, 3, 3, NULL, NULL),
+(4, 'Roma', '3', NULL, 3, 3, 4, NULL, NULL),
+(5, 'Quimica Avançada', '1', NULL, 3, 2, 5, NULL, NULL),
+(6, 'Laboratório', '10', NULL, 4, 2, 5, NULL, NULL),
+(7, 'Gramática', '6', NULL, 3, 5, 6, NULL, NULL),
+(8, 'Gramática 2', '6', '2006', 4, 5, 6, NULL, 1),
+(9, 'Matemática Discreta', '5', '2005', 3, 4, 5, NULL, 1.5),
+(10, 'Matemática Avançada', '10', '1998', 4, 4, 5, NULL, 1.5);
 
 --
 -- Índices para tabelas despejadas
 --
+
+--
+-- Índices para tabela `administrador`
+--
+ALTER TABLE `administrador`
+  ADD PRIMARY KEY (`id_funcionario`),
+  ADD UNIQUE KEY `UNIQUE` (`matricula`);
 
 --
 -- Índices para tabela `aluguel`
@@ -237,6 +259,12 @@ ALTER TABLE `livro`
 --
 -- AUTO_INCREMENT de tabelas despejadas
 --
+
+--
+-- AUTO_INCREMENT de tabela `administrador`
+--
+ALTER TABLE `administrador`
+  MODIFY `id_funcionario` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de tabela `aluguel`
